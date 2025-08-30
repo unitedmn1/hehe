@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cool Website</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f2027;  /* fallback for old browsers */
+      background: linear-gradient(90deg, #2c5364, #203a43, #0f2027);
+      color: #fff;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 20px 40px;
+      background: rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 1.25rem;
+      margin-bottom: 40px;
+      color: #dcdcdc;
+    }
+
+    .hero button {
+      background: #f39c12;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #0f2027;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
+    }
+
+    .hero button:hover {
+      background: #e67e22;
+      box-shadow: 0 6px 20px rgba(230, 126, 34, 0.6);
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+      background: rgba(255,255,255,0.05);
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 250px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(243, 156, 18, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(243, 156, 18, 0.6);
+    }
+
+    .feature h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #f39c12;
+    }
+
+    .feature p {
+      color: #ddd;
+      font-size: 1rem;
+    }
+
+    footer {
+      padding: 15px 20px;
+      background: rgba(0,0,0,0.5);
+      text-align: center;
+      font-size: 0.9rem;
+      color: #bbb;
+      box-shadow: inset 0 1px 5px rgba(255,255,255,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>website made by -k1anx_</h1>
+    <nav>
+      <a href="#discord">Iniwan</a>
+      <a href="#tiktok">pinagpalit</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>welcome kayo mga iniwan</h2>
+    <p>kiannnn websiteee!!!!</p>
+    <button onclick="alert('soon!!')">list:</button>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature">
+      <h3>Razel</h3>
+      <p>iniwan ni antoine at pinagpalit agad.</p>
+    </div>
+    <div class="feature">
+      <h3>gioia</h3>
+      <p>iniwan ni joazil at pinili ung pinsan nya</p>
+    </div>
+    <div class="feature">
+      <h3>rhainjehlyn</h3>
+      <p>miss nya na ex nya HAHAHHA</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    &copy; mga iniwan website.com
+  </footer>
+</body>
+</html>
